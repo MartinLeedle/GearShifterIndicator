@@ -1,0 +1,76 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Texas:TM4C1230C3PM U?
+U 1 1 60C6D688
+P 5700 3650
+F 0 "U?" H 5700 1561 50  0000 C CNN
+F 1 "TM4C1230C3PM" H 5700 1470 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 6950 1650 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tm4c1230c3pm.pdf" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60C6ECA9
+P 8400 4300
+F 0 "D?" H 8393 4516 50  0000 C CNN
+F 1 "LED" H 8393 4425 50  0000 C CNN
+F 2 "" H 8400 4300 50  0001 C CNN
+F 3 "~" H 8400 4300 50  0001 C CNN
+	1    8400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C710D7
+P 7900 4400
+F 0 "R?" H 7970 4446 50  0000 L CNN
+F 1 "R" H 7970 4355 50  0000 L CNN
+F 2 "" V 7830 4400 50  0001 C CNN
+F 3 "~" H 7900 4400 50  0001 C CNN
+	1    7900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60C72003
+P 8950 4100
+F 0 "#PWR?" H 8950 3950 50  0001 C CNN
+F 1 "+5V" H 8965 4273 50  0000 C CNN
+F 2 "" H 8950 4100 50  0001 C CNN
+F 3 "" H 8950 4100 50  0001 C CNN
+	1    8950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4100 8950 4300
+Wire Wire Line
+	8950 4300 8550 4300
+Wire Wire Line
+	8250 4300 8250 4250
+Wire Wire Line
+	8250 4250 7900 4250
+Wire Wire Line
+	7100 3450 7500 3450
+Wire Wire Line
+	7500 3450 7500 4700
+Wire Wire Line
+	7500 4700 7900 4700
+Wire Wire Line
+	7900 4700 7900 4550
+$EndSCHEMATC

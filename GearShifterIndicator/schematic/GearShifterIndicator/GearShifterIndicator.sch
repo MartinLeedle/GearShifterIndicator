@@ -24,4 +24,26 @@ F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5800 3600 50
 	1    5800 3600
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74HC595 U?
+U 1 1 60AF4EE7
+P 3800 2800
+F 0 "U?" H 3800 3581 50  0000 C CNN
+F 1 "74HC595" H 3800 3490 50  0000 C CNN
+F 2 "" H 3800 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3800 2800 50  0001 C CNN
+	1    3800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC595 U?
+U 1 1 60AF6663
+P 8100 4550
+F 0 "U?" H 8100 5331 50  0000 C CNN
+F 1 "74HC595" H 8100 5240 50  0000 C CNN
+F 2 "" H 8100 4550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 8100 4550 50  0001 C CNN
+	1    8100 4550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

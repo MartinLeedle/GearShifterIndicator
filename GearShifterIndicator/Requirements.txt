@@ -1,0 +1,7 @@
+16-seg display
+
+must work with 6 speed(7 gears)
+
+interupts
+
+2 8-bit shift reg

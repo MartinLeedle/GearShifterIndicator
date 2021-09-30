@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "PinChangeInterrupt.h"
+#include <avr/sleep.h>
 /*Since mask 2 is used 8 input can be used,
   so up to a 7 speed with reverse
   I dont think anyone with an 8 speed+ manual would use this
@@ -38,4 +39,6 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  set_sleep_mode (SLEEP_MODE_PWR_DOWN);  
+  //sleep_mode ();  
 }

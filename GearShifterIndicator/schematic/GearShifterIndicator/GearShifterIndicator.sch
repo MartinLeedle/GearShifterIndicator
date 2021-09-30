@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L 74xx:74HC595 U?
 U 1 1 60AF4EE7
-P 3800 2800
-F 0 "U?" H 3800 3581 50  0000 C CNN
-F 1 "74HC595" H 3800 3490 50  0000 C CNN
-F 2 "" H 3800 2800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3800 2800 50  0001 C CNN
-	1    3800 2800
+P 8100 2600
+F 0 "U?" H 8100 3381 50  0000 C CNN
+F 1 "74HC595" H 8100 3290 50  0000 C CNN
+F 2 "" H 8100 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 8100 2600 50  0001 C CNN
+	1    8100 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -46,4 +46,198 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 8100 4550 50  0001 C CNN
 	1    8100 4550
 	1    0    0    -1  
 $EndComp
+$Comp
+L GearShifterIndicator:KY-003 U2
+U 1 1 6156387F
+P 3700 2450
+F 0 "U2" H 3928 2404 50  0000 L CNN
+F 1 "KY-003" H 3928 2495 50  0000 L CNN
+F 2 "" H 3700 2550 50  0001 C CNN
+F 3 "" H 3700 2550 50  0001 C CNN
+	1    3700 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GearShifterIndicator:KY-003 U?
+U 1 1 61566826
+P 3700 3250
+F 0 "U?" H 3928 3296 50  0000 L CNN
+F 1 "KY-003" H 3928 3205 50  0000 L CNN
+F 2 "" H 3700 3350 50  0001 C CNN
+F 3 "" H 3700 3350 50  0001 C CNN
+	1    3700 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L GearShifterIndicator:KY-003 U1
+U 1 1 61567877
+P 3700 1650
+F 0 "U1" H 3642 1135 50  0000 C CNN
+F 1 "KY-003" H 3642 1226 50  0000 C CNN
+F 2 "" H 3700 1750 50  0001 C CNN
+F 3 "" H 3700 1750 50  0001 C CNN
+	1    3700 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L GearShifterIndicator:KY-003 U?
+U 1 1 6156C85B
+P 3700 4850
+F 0 "U?" H 3928 4896 50  0000 L CNN
+F 1 "KY-003" H 3928 4805 50  0000 L CNN
+F 2 "" H 3700 4950 50  0001 C CNN
+F 3 "" H 3700 4950 50  0001 C CNN
+	1    3700 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L GearShifterIndicator:KY-003 U?
+U 1 1 6156C865
+P 3700 5650
+F 0 "U?" H 3928 5696 50  0000 L CNN
+F 1 "KY-003" H 3928 5605 50  0000 L CNN
+F 2 "" H 3700 5750 50  0001 C CNN
+F 3 "" H 3700 5750 50  0001 C CNN
+	1    3700 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L GearShifterIndicator:KY-003 U?
+U 1 1 6156C86F
+P 3700 4050
+F 0 "U?" H 3928 4096 50  0000 L CNN
+F 1 "KY-003" H 3928 4005 50  0000 L CNN
+F 2 "" H 3700 4150 50  0001 C CNN
+F 3 "" H 3700 4150 50  0001 C CNN
+	1    3700 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6157D75D
+P 5850 5550
+F 0 "#PWR?" H 5850 5300 50  0001 C CNN
+F 1 "GND" H 5855 5377 50  0000 C CNN
+F 2 "" H 5850 5550 50  0001 C CNN
+F 3 "" H 5850 5550 50  0001 C CNN
+	1    5850 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5550 5850 5450
+Wire Wire Line
+	5850 4650 5900 4650
+Wire Wire Line
+	5900 4650 5900 4600
+Wire Wire Line
+	4000 5450 4950 5450
+Wire Wire Line
+	4950 5450 4950 4650
+Wire Wire Line
+	4950 4650 4000 4650
+Wire Wire Line
+	4950 4650 4950 3850
+Wire Wire Line
+	4950 3850 4000 3850
+Connection ~ 4950 4650
+Wire Wire Line
+	4950 3850 4950 3050
+Wire Wire Line
+	4950 3050 4000 3050
+Connection ~ 4950 3850
+Wire Wire Line
+	4950 2250 4000 2250
+Connection ~ 4950 3050
+Wire Wire Line
+	4000 1450 4950 1450
+Wire Wire Line
+	4950 1450 4950 2250
+Connection ~ 4950 2250
+Wire Wire Line
+	4950 2250 4950 3050
+Wire Wire Line
+	4950 5450 5850 5450
+Connection ~ 4950 5450
+Connection ~ 5850 5450
+Wire Wire Line
+	5850 5450 5850 5250
+$Comp
+L power:+5V #PWR?
+U 1 1 61582903
+P 5700 2050
+F 0 "#PWR?" H 5700 1900 50  0001 C CNN
+F 1 "+5V" H 5715 2223 50  0000 C CNN
+F 2 "" H 5700 2050 50  0001 C CNN
+F 3 "" H 5700 2050 50  0001 C CNN
+	1    5700 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1650 4600 1650
+Wire Wire Line
+	4600 1650 4600 2400
+Wire Wire Line
+	4600 2450 4000 2450
+Wire Wire Line
+	4600 2450 4600 3250
+Wire Wire Line
+	4600 3250 4000 3250
+Connection ~ 4600 2450
+Wire Wire Line
+	4600 3250 4600 4050
+Wire Wire Line
+	4600 4050 4000 4050
+Connection ~ 4600 3250
+Wire Wire Line
+	4600 4050 4600 4850
+Wire Wire Line
+	4600 4850 4000 4850
+Connection ~ 4600 4050
+Wire Wire Line
+	4000 5650 4600 5650
+Wire Wire Line
+	4600 5650 4600 4850
+Connection ~ 4600 4850
+Wire Wire Line
+	5700 2050 5700 2250
+Wire Wire Line
+	4600 2400 5700 2400
+Connection ~ 4600 2400
+Wire Wire Line
+	4600 2400 4600 2450
+Connection ~ 5700 2400
+Wire Wire Line
+	5700 2400 5700 2600
+Wire Wire Line
+	8050 3300 8050 3800
+Wire Wire Line
+	8050 3800 6750 3800
+Wire Wire Line
+	6750 3800 6750 5250
+Wire Wire Line
+	6750 5250 5850 5250
+Connection ~ 5850 5250
+Wire Wire Line
+	5850 5250 5850 4650
+Wire Wire Line
+	8100 5250 6750 5250
+Connection ~ 6750 5250
+Wire Wire Line
+	6650 2000 6650 2250
+Wire Wire Line
+	6650 2250 5700 2250
+Connection ~ 5700 2250
+Wire Wire Line
+	5700 2250 5700 2400
+Wire Wire Line
+	8100 3950 7000 3950
+Wire Wire Line
+	7000 3950 7000 2000
+Connection ~ 7000 2000
+Wire Wire Line
+	7000 2000 6650 2000
+Wire Wire Line
+	7000 2000 8100 2000
+Wire Wire Line
+	8100 3300 8050 3300
 $EndSCHEMATC

@@ -37,6 +37,21 @@ X QH' 9 400 -500 100 L 50 50 1 0 O
 ENDDRAW
 ENDDEF
 #
+# GearShifterIndicator_KY-003
+#
+DEF GearShifterIndicator_KY-003 U 0 40 Y Y 1 F N
+F0 "U" 0 400 50 H V C CNN
+F1 "GearShifterIndicator_KY-003" 0 -400 50 H V C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+S -200 350 200 -350 0 1 0 f
+X Signal 1 -300 200 100 R 50 50 1 1 I
+X +V 2 -300 0 100 R 50 50 1 1 I
+X GND 3 -300 -200 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # MCU_Module_Arduino_Nano_v3.x
 #
 DEF MCU_Module_Arduino_Nano_v3.x A 0 20 Y Y 1 F N
@@ -80,6 +95,34 @@ X D3 6 -500 300 100 R 50 50 1 1 B
 X D4 7 -500 200 100 R 50 50 1 1 B
 X D5 8 -500 100 100 R 50 50 1 1 B
 X D6 9 -500 0 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
